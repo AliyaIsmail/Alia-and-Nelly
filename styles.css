@@ -27,11 +27,11 @@ body {
 }
 #header-img{
     display: flex;
-
 }
 #header-img img{
     max-width: 30px;
-    transform: rotateX(20deg);
+    transform: rotate(40deg);
+    margin-right: 10px;
 }
 #header-img span{
     line-height: 30px;
@@ -44,31 +44,121 @@ body {
 }
 #form {
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    margin-bottom: 100px;
 }
 #form span{
     font-size: 20px;
     font-weight: 700;
-
 }
 #form input[type="email"] {
     padding: 10px;
-
-
+    width: 300px;
 }
 #form input[type="submit"] {
-    padding: 10px;
+    padding: 10px 4px 10px 20px;
     font-size: 20px;
     font-weight: 700;
-    background-color: #e5ff00;
+    background-color: #f1c40f;
     border: none;
     margin-top: 5px;
 }
 #form input[type="submit"]:hover{
     background-color: #f9b106;
+}
+
+#howItWorks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#howItWorks .howItWorks-items{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#howItWorks img{
+    max-width: 80px;
+    margin-right: 50px;
+}
+#howItWorks .howItWorks-items .title{
+    font-size: 20px;
+    font-weight: 700;
+}
+#video{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+#pricing{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#pricing .card-box{
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    margin: 0 20px;
+    text-align: center;
+}
+#pricing .card-head{
+    background-color: #dddddd;
+    padding: 10px;
+}
+#pricing .card-body{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#pricing .card-body .price{
+    font-size: 20px;
+    font-weight: 700;
+}
+#pricing input[type="button"]{
+    padding: 10px 30px;
+    background-color: #f1c40f;
+    text-transform: uppercase;
+    border: none;
+}
+#pricing input[type="button"]:hover{
+    background-color: #f9b106;
+}
+
+footer{
+    width: 70%;
+    padding: 20px;
+    margin: auto;
+    text-align: right;
+    background-color: #dddddd;
+}
+footer .footer-links a{
+    font-size: 18px;
+ color: #000000;
+ margin-right: 10px;
+ text-decoration: none;
+}
+footer p{
+    font-size: 14px;
+    color: #595858;
+}
+
+@media (max-width : 768px) {
+    #header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
